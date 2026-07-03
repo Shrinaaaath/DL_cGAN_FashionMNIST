@@ -1,0 +1,19 @@
+name: Trigger DevLake
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-devlake:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Trigger DevLake Blueprint
+
+        run: |
+          curl -i -X POST \
+          https://capricorn-reclining-oxford.ngrok-free.dev/blueprints/4/trigger
