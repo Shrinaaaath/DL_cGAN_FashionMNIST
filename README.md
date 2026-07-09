@@ -59,5 +59,4 @@ Open notebook:
 
 cgan_fashion_mnist.ipynb
 
-Run all cells sequentially..
-# Test
+Run all cells sequentially...
